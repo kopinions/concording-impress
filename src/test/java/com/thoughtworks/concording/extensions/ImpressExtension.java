@@ -6,6 +6,7 @@ public class ImpressExtension implements ConcordionExtension {
     @Override
     public void addTo(ConcordionExtender concordionExtender) {
         concordionExtender.withLinkedCSS("/styles.css", new Resource("/styles.css"));
+        concordionExtender.withLinkedJavaScript("/impress.js", new Resource("/impress.js"));
         concordionExtender.withResource("/icon/menu.png", new Resource("/icon/menu.png"));
     }
 }

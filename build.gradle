@@ -12,7 +12,7 @@ dependencies {
 
 
 test {
-    systemProperties['concordion.output.dir'] = "$reporting.baseDir/spec"
+    systemProperties['concordion.output.dir'] = "$projectDir/spec"
     testLogging.showStandardStreams = true
     outputs.upToDateWhen { false }
 }
